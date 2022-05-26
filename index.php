@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LOGIN</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <label for="pass">Password: </label>
         <input type="password" name="pass" placeholder="Password">
         <br>
-        <button type="submit" value="submit">Login</button>
+        <button type="login" value="login">Login</button>
     </form>
 </body>
 
