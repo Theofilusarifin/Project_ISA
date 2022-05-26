@@ -9,10 +9,30 @@
 </head>
 
 <body>
-    <form action="proses.php" method="get">
-        <input type="text" name="username" id="">
-        <input type="password" name="password" id="">
-        <input type="submit" value="Login">
+<form action="login.php" method="post">
+        <h2>LOGIN</h2>
+        <?php if (isset($_GET['error'])) {
+            switch($_GET['error']) {
+                case 1:?>
+                    <p class="error"> <?php echo "Username and Password is REQUIRED."; ?> </p>
+            <?php break;
+                case 2:?>
+                    <p class="error"> <?php echo "Username is REQUIRED."; ?> </p>
+            <?php break;
+                case 3:?>
+                    <p class="error"> <?php echo "Password is REQUIRED."; ?> </p>
+            <?php break;
+                case 4:?>
+                    <p class="error"> <?php echo "Incorrect Username or Password is REQUIRED."; ?> </p>
+            <?php break;?>
+        <?php }} ?>
+        <label for="uname">Username: </label>
+        <input type="text" name="uname" placeholder="Username">
+        <br>
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" placeholder="Password">
+        <br>
+        <button type="submit" value="submit">Login</button>
     </form>
 </body>
 
