@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    Halo
+    <form action="proses.php" method="get">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="submit" value="Login">
+    </form>
 </body>
 
 </html>
