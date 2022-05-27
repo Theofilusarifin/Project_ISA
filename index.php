@@ -6,16 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
     <div class="container">
-        <img src="assets/cover.png" alt="">
+        <img src="assets/img/Background_index.png" alt="">
         <form action="login.php" method="POST">
             <div class="content">
-                <div class="rectangle">
-                    <p>LOGIN</p>
                     <?php if (isset($_GET['error'])) {
                         switch ($_GET['error']) {
                             case 1: ?>
@@ -32,10 +30,13 @@
                                 <?php break; ?>
                     <?php }
                     } ?>
-                    <label for="uname">Username: </label>
+                <div class="rectangle">
+                    <label for="uname">Username </label>
+                    <br>
                     <input type="text" name="uname" placeholder="Username">
                     <br>
-                    <label for="pass">Password: </label>
+                    <label for="pass">Password </label>
+                    <br>
                     <input type="password" name="pass" placeholder="Password">
                     <br>
                     <input class="mybutton" type="submit" value="Login">
@@ -47,10 +48,3 @@
 
 
 </html>
-
-
-
-
-
-
-

@@ -30,7 +30,9 @@ img {
 	top: 50px;
 	left: 225px;
 	width: 1100px;
-	height: 500px;
+	height: 550px;
+	max-width: 1100px;
+	max-height: 5500px;
 }
 
 form {
@@ -39,64 +41,47 @@ form {
 	left: 43%;
 }
 
+label{
+	color: #021a4a;
+}
+input[type=text], input[type=password]{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	width: 250px;
+	height: 20px;
+	border: solid #021a4a 1px;
+	padding: 5px;
+}
+
 p {
 	position: absolute;
 	font-family: "Poppins", sans-serif;
 	font-size: 18px;
-	color: #021a4a;
-	right: 550px;
-	bottom: 37px;
+	color: red;
+	right: 270px;
+	bottom: 180px;
+	width: 300px;
 }
 .rectangle {
-	position: absolute;
+	position: relative;
 	background: white;
-	padding: 15px 10px;
-	width: 700px;
-	height: 60px;
-	margin: 280px -270px;
-	border-radius: 8px;
+	padding: 40px 50px;
+	width: 270px;
+	height: 200px;
+	margin: 150px -200px;
+	border-radius: 10px;
 	box-shadow: 3px 9px 28px 1px rgba(0, 0, 0, 0.15);
-}
-.myselect {
-	text-align-last: center;
-	padding: 10px 25px;
-	margin-left: 10px;
-	margin-top: 20px;
-	width: 400px;
-	height: 40px;
-
-	color: #bababa;
-	border: 2px solid #021a4a;
-
-	border-radius: 12px;
-	background-color: white;
-	background-image: linear-gradient(45deg, transparent 50%, #bababa 50%), linear-gradient(135deg, #bababa 50%, transparent 50%);
-	background-repeat: no-repeat;
-	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-	background-size: 5px 5px, 5px 5px, 1px 1.5em;
-
-	font: inherit;
-	font-size: 14px;
-	color: #021a4a;
-
-	-webkit-appearance: none;
-}
-
-.myselect:hover {
-	cursor: pointer;
-}
-
-.myselect:focus {
-	outline: 0;
 }
 
 .mybutton {
 	position: absolute;
+	bottom: 40px;
+	right: 55px;
 	background: #021a4a;
 	border-radius: 61px;
 	width: 150px;
 	height: 40px;
-	margin: -40px 540px;
 	font-family: "Poppins", sans-serif;
 	font-weight: normal;
 	font-size: 16px;
