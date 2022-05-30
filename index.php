@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <img src="assets/img/Background_index.png" alt="">
-        <form action="login.php" method="POST">
+        <form action="login.php" method="GET">
             <div class="content">
                     <?php if (isset($_GET['error'])) {
                         switch ($_GET['error']) {
@@ -26,7 +26,7 @@
                                 <p class="error"> <?php echo "Password is REQUIRED."; ?> </p>
                             <?php break;
                             case 4: ?>
-                                <p class="error"> <?php echo "Incorrect Username or Password is REQUIRED."; ?> </p>
+                                <p class="error"> <?php echo "Incorrect Username or Password is inputted."; ?> </p>
                                 <?php break; ?>
                     <?php }
                     } ?>
