@@ -29,11 +29,11 @@ if (isset($_GET['uname']) && isset($_GET['pass'])) {
                 // header("Location: home.php?uname=uname&&pass=pass");
                 exit();
             } else {
-                header("Location: index.php?error=4");
+                header("Location: index.php?username=uname&&pass=pass&&error=4");
                 exit();
             }
         } else {
-            header("Location: index.php?error=4");
+            header("Location: index.php?username=uname&&pass=pass&&error=4");
             exit();
         }
     }
