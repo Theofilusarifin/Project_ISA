@@ -20,7 +20,7 @@
             overflow: hidden;
         }
 
-        p{
+        p {
             color: red;
         }
 
@@ -138,6 +138,10 @@
 
         form .signup-link a:hover {
             text-decoration: underline;
+        }
+
+        .pass {
+            cursor: pointer;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
