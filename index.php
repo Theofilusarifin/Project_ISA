@@ -154,11 +154,11 @@
             <form action="login.php" method="GET">
                 <div class="row">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="text" placeholder="Username" name="username">
                 </div>
                 <div class="row">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="password" placeholder="Password" name="password">
                 </div>
                 <div class="pass"><a onclick="alert('Ya diinget dong!')">Forgot password?</a></div>
                 <div class="row button">
